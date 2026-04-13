@@ -25,9 +25,4 @@ Business Demand Overview
 --
 
 **User Stories:**
-
-	As:	I request:	So that I (user value)	Acceptance criteria:
-1.	Sales Manager	to get a dashboard overview of internet sales	can understand which product and customers drive revenue.	A Power BI daschboard with updates on a daily basis.
-2.	Sales Representative	a detailed overview of Internet Sales per Customer.	can follow up the customers that purchase often and who we can sell more to. 	A Power BI daschboard which allows to filer data for each customer.
-3.	Sales Representative	a detailed overview of Internet Sales per Products.	can follow up the products that sells the most.		A Power BI daschboard which allows to filer data for each customer.
-4.	Sales Manager	a dashboard overview of internet sales.		can follow sales over time against budget.	A Power BI dashboard with graphs and KPIs.
+<img width="583" height="322" alt="image" src="https://github.com/user-attachments/assets/48e7f8c5-284b-424f-a501-31649ad9a0f9" />

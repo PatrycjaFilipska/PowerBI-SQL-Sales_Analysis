@@ -13,7 +13,7 @@ Because sales representatives manage different products and client portfolios, t
 Additionally, the company evaluates its performance against predefined budget targets (provided in a separate dataset). 
 The analysis should include comparisons to the 2021 budget, along with historical data covering the two preceding years to provide meaningful context and trend insights.
 
---
+-------------------------------------------------------------------------
 
 Business Demand Overview
 
@@ -22,7 +22,10 @@ Business Demand Overview
 * Systems: Power BI, CRM System
 * Other Relevant Info: Budget for 2021 has been delivered in .csv
 
---
+----------------------------------------------------------------------------
 
 **User Stories:**
-<img width="583" height="322" alt="image" src="https://github.com/user-attachments/assets/48e7f8c5-284b-424f-a501-31649ad9a0f9" />
+
+
+<img width="581" height="328" alt="image" src="https://github.com/user-attachments/assets/44fc69d9-0796-4816-abe5-25c0ecf606a6" />
+

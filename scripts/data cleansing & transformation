@@ -1,0 +1,79 @@
+/* DATA CLEANSING AND TRANSFORMATION
+
+This script prepares raw data for reporting. Files are going to be saved in .csv format: 
+- DIM_Calendar
+- DIM_Customer
+- DIM_Products
+- FACT_InternetSales
+
+*/
+-- --------------------------------------------------------------------------------------------
+-- Cleansing DIM_Date Table
+-- --------------------------------------------------------------------------------------------
+
+SELECT 
+	DateKey,
+	FullDateAlternateKey AS Date,
+	EnglishDayNameOfWeek AS Day,
+	EnglishMonthName AS Month,
+	LEFT(EnglishMonthName, 3) AS MonthShort,
+	MonthNumberOfYear AS MonthNo,
+	CalendarQuarter AS Quarter,
+	CalendarYear AS Year
+FROM dbo.DimDate
+WHERE CalendarYear >=2019
+-- --------------------------------------------------------------------------------------------
+-- Cleansing DimCustomer Table and joining with DimGeography Table
+-- ---------------------------------------------------------------------------------------------
+
+SELECT
+	c.CustomerKey,
+	c.FirstName,
+	c.LastName,
+	c.FirstName + ' ' + c.LastName AS FullName, --combined first and last name into full name
+	CASE c.gender
+		WHEN 'M' THEN 'Male'
+		WHEN 'F' THEN 'Female'
+	END AS Gender,
+	c.DateFirstPurchase,
+	g.City AS CustomerCity
+FROM dbo.DimCustomer c
+LEFT JOIN dbo.DimGeography g ON g.GeographyKey = c.GeographyKey -- Joining with DimGeography Table
+ORDER BY CustomerKey
+-- ---------------------------------------------------------------------------------------------------
+-- Cleansing DimProduct Table and joining with DimProductCategory and DimProductSubcategory Tables
+-- ---------------------------------------------------------------------------------------------------
+
+SELECT
+	p.ProductKey,
+	p.ProductAlternateKey AS ProductItemCode,
+	p.EnglishProductName AS ProductName,
+	p.Color AS ProductColor,
+	p.Size AS ProductSize,
+	p.ProductLine,
+	c.EnglishProductCategoryName AS CategoryName,
+	s.EnglishProductSubcategoryName AS SubcategoryName,
+	p.EnglishDescription AS ProductDescription,
+	p.ModelName,
+	ISNULL (p.Status, 'Outdated') AS ProductStatus
+FROM dbo.DimProductSubcategory s
+LEFT JOIN dbo.DimProductCategory c ON c.ProductCategoryKey = s.ProductCategoryKey
+LEFT JOIN dbo.DimProduct p ON p.ProductSubcategoryKey = s.ProductSubcategoryKey 
+ORDER BY p.ProductKey
+
+-- ---------------------------------------------------------------------------------------------------
+-- Cleansing FactInternetSales table
+-- ---------------------------------------------------------------------------------------------------
+
+SELECT
+	ProductKey,
+	OrderDateKey, --format YYYYMMDD
+	DueDateKey,
+	ShipDateKey,
+	CustomerKey,
+	SalesOrderNumber,
+	SalesAmount
+FROM FactInternetSales
+WHERE
+	LEFT(OrderDateKey, 4) >= YEAR(GETDATE()) - 2 --only 2 years from today
+ORDER BY OrderDateKey

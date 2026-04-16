@@ -7,10 +7,8 @@ This script prepares raw data for reporting. Files are going to be saved in .csv
 - FACT_InternetSales
 
 */
--- --------------------------------------------------------------------------------------------
--- Cleansing DIM_Date Table
--- --------------------------------------------------------------------------------------------
 
+-- Cleansing DIM_Date Table
 SELECT 
 	DateKey,
 	FullDateAlternateKey AS Date,
@@ -21,7 +19,8 @@ SELECT
 	CalendarQuarter AS Quarter,
 	CalendarYear AS Year
 FROM dbo.DimDate
-WHERE CalendarYear >=2019
+WHERE CalendarYear BETWEEN 2022 AND 2024
+ORDER BY DateKey
 -- --------------------------------------------------------------------------------------------
 -- Cleansing DimCustomer Table and joining with DimGeography Table
 -- ---------------------------------------------------------------------------------------------
@@ -75,5 +74,5 @@ SELECT
 	SalesAmount
 FROM FactInternetSales
 WHERE
-	LEFT(OrderDateKey, 4) >= YEAR(GETDATE()) - 2 --only 2 years from today
+	LEFT(OrderDateKey, 4) BETWEEN '2022' AND '2024'
 ORDER BY OrderDateKey

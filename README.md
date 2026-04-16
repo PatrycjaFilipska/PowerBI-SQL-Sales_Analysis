@@ -22,8 +22,9 @@ Because sales representatives manage different products and client portfolios, t
 Additionally, the company evaluates its performance against predefined budget targets (provided in a separate dataset). 
 The analysis should include comparisons to the 2021 budget, along with historical data covering the two preceding years to provide meaningful context and trend insights.
 
+-------------------------------------------------------------------------
 
-**User Stories:**
+## User Stories:
 
 
 <img width="581" height="328" alt="image" src="https://github.com/user-attachments/assets/44fc69d9-0796-4816-abe5-25c0ecf606a6" />

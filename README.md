@@ -2,6 +2,10 @@
 
 The goal of this project is to modernize internet sales reporting by replacing static, hard-to-read reports with interactive dashboards that support faster and more informed decision-making.
 
+## Data Source
+- AdventureWorksDW2022
+- Data was adjusted to reduce category dominance and improve visual interpretability of category-level insight
+
 ## Business Value
 This dashboard enables:
 

@@ -45,43 +45,47 @@ The analysis should include comparisons to the 2021 budget, along with historica
 # Sales Overview
 
 This page provides a high-level summary of business performance.
+<img width="1445" height="803" alt="image" src="https://github.com/user-attachments/assets/b2737a24-9141-4848-ac0f-30efc7454be0" />
 
 Key elements:
-Total Sales KPI with comparison to budget
-Sales vs Budget trend over months
-Top 10 Customers and Top 10 Products
-Sales by Product Category (distribution)
-Geographical sales map
+- Total Sales KPI with comparison to budget
+- Sales vs Budget trend over months
+- Top 10 Customers and Top 10 Products
+- Sales by Product Category (distribution)
+- Geographical sales map
 Insights:
 Clear seasonality — sales increase significantly toward the end of the year
 Product category Bikes dominates total revenue
 Strong concentration of sales in specific regions
 
+
 # Customer Details
+<img width="1450" height="816" alt="image" src="https://github.com/user-attachments/assets/e72100da-9206-4f94-bb33-2c9d2df56c7f" />
 
 This section focuses on customer-level analysis.
 
 Key elements:
-Total Sales and Budget KPIs
-Top 10 Customers ranking
-Sales trend by day of week
-Sales distribution by Customer City (map)
-Detailed customer table with monthly breakdown
+- Total Sales and Budget KPIs
+- Top 10 Customers ranking
+- Sales trend by day of week
+- Sales distribution by Customer City (map)
+- Detailed customer table with monthly breakdown
 Insights:
 Sales vary depending on the day of the week
 A small group of customers generates a large portion of revenue
 Geographic clustering of customers is clearly visible
 
 # Product Details
+<img width="1441" height="811" alt="image" src="https://github.com/user-attachments/assets/561c2264-d346-4b18-8eaf-8b490dcd1b85" />
 
 This page dives deeper into product performance.
 
 Key elements:
-Top 10 Best Selling Products
-Bottom 10 Worst Selling Products
-Sales by Quarter (multi-year comparison)
-Sales distribution by Subcategory
-Product table with descriptions
+- Top 10 Best Selling Products
+- Bottom 10 Worst Selling Products
+- Sales by Quarter (multi-year comparison)
+- Sales distribution by Subcategory
+- Product table with descriptions
 Insights:
 Significant performance gap between top and bottom products
 Strong growth in Q4 across all years
@@ -91,10 +95,10 @@ Sales heavily concentrated in specific subcategories
 
 The dashboard includes multiple filters:
 
-Year
-Month
-Product Category
-Product attributes (color, size, model)
+- Year
+- Month
+- Product Category
+- Product attributes (color, size, model)
 
 All visuals are interconnected, enabling dynamic exploration of data.
 

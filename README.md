@@ -7,9 +7,9 @@ The report focuses on analyzing sales performance, customer behavior, and produc
 
 The dashboard is divided into three main sections:
 
-Sales Overview
-Customer Details
-Product Details
+1. Sales Overview
+2. Customer Details
+3. Product Details
 
 Each page is fully interactive and responds to filters such as year, month, category, and product attributes.
 

@@ -44,8 +44,9 @@ The analysis should include comparisons to the 2021 budget, along with historica
 
 # Sales Overview
 
-This page provides a high-level summary of business performance.
 <img width="1445" height="803" alt="image" src="https://github.com/user-attachments/assets/b2737a24-9141-4848-ac0f-30efc7454be0" />
+
+This page provides a high-level summary of business performance.
 
 Key elements:
 - Total Sales KPI with comparison to budget
@@ -60,6 +61,7 @@ Strong concentration of sales in specific regions
 
 
 # Customer Details
+
 <img width="1450" height="816" alt="image" src="https://github.com/user-attachments/assets/e72100da-9206-4f94-bb33-2c9d2df56c7f" />
 
 This section focuses on customer-level analysis.
@@ -76,6 +78,7 @@ A small group of customers generates a large portion of revenue
 Geographic clustering of customers is clearly visible
 
 # Product Details
+
 <img width="1441" height="811" alt="image" src="https://github.com/user-attachments/assets/561c2264-d346-4b18-8eaf-8b490dcd1b85" />
 
 This page dives deeper into product performance.

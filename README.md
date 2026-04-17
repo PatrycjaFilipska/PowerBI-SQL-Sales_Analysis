@@ -1,10 +1,17 @@
-# Sales Overview Dashboard (Power BI)
+# Sales Analytics Dashboard (Power BI)
 
 The goal of this project is to modernize internet sales reporting by replacing static, hard-to-read reports with interactive dashboards that support faster and more informed decision-making.
 
-## Data Source
-- AdventureWorksDW2022
-- Data was adjusted to reduce category dominance and improve visual interpretability of category-level insight
+This project presents an interactive Sales Analytics Dashboard built in Power BI, based on the AdventureWorks dataset.
+The report focuses on analyzing sales performance, customer behavior, and product-level insights across time, categories, and geographies.
+
+The dashboard is divided into three main sections:
+
+Sales Overview
+Customer Details
+Product Details
+
+Each page is fully interactive and responds to filters such as year, month, category, and product attributes.
 
 ## Business Value
 This dashboard enables:
@@ -35,50 +42,75 @@ The analysis should include comparisons to the 2021 budget, along with historica
 
 -------------------------------------------------------------------------
 
+# Sales Overview
+
+This page provides a high-level summary of business performance.
+
+Key elements:
+Total Sales KPI with comparison to budget
+Sales vs Budget trend over months
+Top 10 Customers and Top 10 Products
+Sales by Product Category (distribution)
+Geographical sales map
+Insights:
+Clear seasonality — sales increase significantly toward the end of the year
+Product category Bikes dominates total revenue
+Strong concentration of sales in specific regions
+
+# Customer Details
+
+This section focuses on customer-level analysis.
+
+Key elements:
+Total Sales and Budget KPIs
+Top 10 Customers ranking
+Sales trend by day of week
+Sales distribution by Customer City (map)
+Detailed customer table with monthly breakdown
+Insights:
+Sales vary depending on the day of the week
+A small group of customers generates a large portion of revenue
+Geographic clustering of customers is clearly visible
+
+# Product Details
+
+This page dives deeper into product performance.
+
+Key elements:
+Top 10 Best Selling Products
+Bottom 10 Worst Selling Products
+Sales by Quarter (multi-year comparison)
+Sales distribution by Subcategory
+Product table with descriptions
+Insights:
+Significant performance gap between top and bottom products
+Strong growth in Q4 across all years
+Sales heavily concentrated in specific subcategories
+
+## Interactivity
+
+The dashboard includes multiple filters:
+
+Year
+Month
+Product Category
+Product attributes (color, size, model)
+
+All visuals are interconnected, enabling dynamic exploration of data.
+
+## Key Takeaways
+Sales are highly seasonal, with peak performance in Q4
+A limited number of products and customers drive most revenue
+Category dominance (especially Bikes) can mask performance of other segments
+Underperforming products are clearly identifiable for optimization
+
 ## Tools & Technologies
-- Power BI
-- Power Query (ETL)
-- DAX
-- SQL (data extraction & transformation)
+Power BI
+DAX (for KPI calculations and measures)
+SQL (data extraction and transformation)
+AdventureWorks dataset
 
----
-## Key Features
-
-### Dynamic KPI Card
-- Displays total **Sales**
-- Shows **Budget** comparison
-- Highlights variance (positive/negative) with visual indicator
-
----
-
-### Time Analysis
-- Interactive slicers for:
-  - Year
-  - Month
-- Line chart:
-  - Sales vs Budget over time
-  - Easy trend comparison
-
----
-
-### Top Performers
-- **Top 10 Customers**
-- **Top 10 Products**
-- Conditional formatting (heatmap style) for quick comparison
-
----
-
-### Product Analysis
-- Donut chart showing **Sales by Product Category**
-- Quick identification of dominant categories
-
----
-
-### Geographical Insights
-- Map visualization of **Sales by Customer City**
-- Helps identify regional patterns
-
----
+--
 
 ## Data Model
 

@@ -112,10 +112,10 @@ Category dominance (especially Bikes) can mask performance of other segments
 Underperforming products are clearly identifiable for optimization
 
 ## Tools & Technologies
-Power BI
-DAX (for KPI calculations and measures)
-SQL (data extraction and transformation)
-AdventureWorks dataset
+- Power BI
+- DAX (for KPI calculations and measures)
+- SQL (data extraction and transformation)
+- AdventureWorks dataset
 
 --
 
@@ -132,7 +132,7 @@ The report is built using a **star schema**:
 - `DIM_Customers`
 - `DIM_Products`
 
-Relationships:
+### Relationships:
 - DIM_Calendar -> FACT_InternetSales (DateKey)
 - DIM_Calendar -> FACT_Budget (Date)
 - DIM_Products -> FACT_InternetSales (ProductKey)

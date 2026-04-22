@@ -7,8 +7,10 @@ This script prepares raw data for reporting. Files are going to be saved in .csv
 - FACT_InternetSales
 
 */
-
+-- --------------------------------------------------------------------------------------------
 -- Cleansing DIM_Date Table
+-- --------------------------------------------------------------------------------------------
+
 SELECT 
 	DateKey,
 	FullDateAlternateKey AS Date,
